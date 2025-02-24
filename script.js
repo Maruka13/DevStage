@@ -97,4 +97,7 @@ const startApp = () => {
 
         formAction()
     }
+
     startApp()
+
+    document.getElementById("logo").onclick = () => startApp()
