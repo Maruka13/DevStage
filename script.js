@@ -9,17 +9,17 @@ const formAction = () => {
 
 const startApp = () => {
     const content = `
-    <form id="form">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="text" name="phone" placeholder="Telefone">
+        <form id="form">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="phone" placeholder="Telefone">
 
-        <button>
-            Confirmar
-        </button>
-    </form>
-    `
-    app.innerHTML = content;
+            <button>
+               Confirmar
+            </button>
+        </form>
+        `
+        app.innerHTML = content;
 
-    formAction()
-}
-startApp()
+        formAction()
+    }
+    startApp()
