@@ -66,6 +66,19 @@ const formAction = () => {
     const form = document.getElementById("form")
     form.onsubmit = (event) => {
         event.preventDefault()
+        const formData = new FormData(form)
+        const userData = {
+            email: formData.get("email"),
+            phone: formData.get("phone"),
+        }
+
+        const user = getUser(userData)
+        if (user) {
+            showInvite(user)
+        } else {
+            const newUser = saveUser(userData)
+            showInvite(newUser)
+        }
     }
 }
 
